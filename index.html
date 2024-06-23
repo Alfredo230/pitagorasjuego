@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Teorema de Pitágoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego del Teorema de Pitágoras</h1>
+        <div id="gameArea">
+            <canvas id="triangleCanvas"></canvas>
+            <div id="question">
+                <p>Encuentra el valor de la hipotenusa:</p>
+                <p id="catetoA">?</p>
+                <p id="catetoB">?</p>
+                <input type="number" id="answer" placeholder="Escribe tu respuesta">
+                <button id="checkBtn">Comprobar</button>
+                <p id="result"></p>
+            </div>
+            <div id="score">
+                <p>Puntuación: <span id="scoreValue">0</span></p>
+                <p>Vidas: <span id="livesValue">3</span></p>
+                <p>Tiempo restante: <span id="timeLeftValue">120</span> seg.</p>
+            </div>
+            <button id="playAgainBtn" style="display: none;">Volver a jugar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
